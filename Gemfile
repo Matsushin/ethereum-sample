@@ -8,18 +8,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'devise'
-gem 'devise-bootstrap-views'
 gem 'hamlit'
 gem 'ethereum.rb'
-gem 'simple_form'
 gem 'bootstrap-sass'
-gem 'font-awesome-rails'
 gem 'dotenv-rails'
-
-source 'https://rails-assets.org' do
-  gem 'rails-assets-toastr'
-end
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -33,4 +25,6 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'erb2haml'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end

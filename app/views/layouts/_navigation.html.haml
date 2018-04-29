@@ -10,12 +10,3 @@
         %span.icon-bar
       = link_to root_path, class: 'navbar-brand' do
         %strong Ethereum Sample
-    .collapse.navbar-collapse
-      %ul.nav.navbar-nav.navbar-right
-        - if user_signed_in?
-          %li
-            = link_to destroy_user_session_path, method: 'delete' do
-              = fa_icon('sign-out', text: 'ログアウト')
-        - else
-          %li
-            = link_to 'ログイン', root_path

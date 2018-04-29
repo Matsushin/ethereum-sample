@@ -1,2 +1,10 @@
-%h3 残高表示
-
+%h3 Ethereum.rb連携テスト
+%p
+  アドレス：
+  = @contract.call.get_address()
+%p
+  残高：
+  = @contract.call.get_balance()
+%p
+  sayメソッド呼び出し：
+  = @contract.call.say()
